@@ -2,11 +2,43 @@ h1, h3 {
     text-align: center
 }
 
-/* body { 
+body { 
     background-color: rgb(4, 47, 89);
 }
+
 header {
-    text-color: aliceblue;
+    text-decoration-color: aliceblue;
     background-color: rgba(138, 9, 9, 0.848);
+    position: sticky;
+    top: 0;
+    padding: 16px;
 }
-*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(138, 9, 9, 0.848);
+    display: flex;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+ul li{
+    float: left;
+    border-right: 1px solid black;
+    padding: 2px;
+}
+
+ul li a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: rgb(101, 167, 233)
+}
