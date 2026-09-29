@@ -4,6 +4,11 @@ h1, h3 {
 
 body { 
     background-color: rgb(4, 47, 89);
+    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: 0 auto;
 }
 
 header {
@@ -14,31 +19,41 @@ header {
     padding: 16px;
 }
 
-ul {
+main{
+    width: 960 px;
+    border: 1px white solid;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: rgba(138, 9, 9, 0.848);
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     position: sticky;
     top: 0;
     width: 100%;
 }
 
-ul li{
+nav ul li{
     float: left;
     border-right: 1px solid black;
     padding: 2px;
 }
 
-ul li a {
+nav ul li a {
     display: block;
     color: black;
     padding: 16px;
     text-decoration: none;
 }
 
-ul li a:hover {
+nav ul li a:hover {
     background-color: rgb(101, 167, 233)
 }
