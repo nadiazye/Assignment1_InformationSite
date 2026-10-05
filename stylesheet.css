@@ -176,3 +176,73 @@ nav ul li a:hover {
     padding-top: 60px;               
     padding-bottom: 30px;            
 }
+
+/* ------------------------------- JAVASCRIPT STUFF BELOW ----------------------------------------------------*/
+/* The buttons (theme button and fun fact button) */
+button {
+    background-color: rgb(155, 27, 27);
+    color: white;
+    font-family: inherit;          /* uses the page font instead of the browser's button font */
+    font-size: 1rem;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;               /* hand cursor on hover */
+}
+ 
+button:hover {
+    background-color: rgb(101, 167, 233);
+    color: black;
+}
+ 
+#theme-btn {
+    display: block;
+    margin: 10px auto 0 auto;      /* centers the button under the nav */
+}
+ 
+/* Added by JS when the page is scrolled down: smaller header */
+header.scrolled {
+    padding: 0 16px;
+}
+
+header.scrolled h1 {
+    font-size: 1.2rem;     /* title shrinks */
+    margin: 6px 0;         /* removes the big gap above and below it */
+}
+ 
+/* Fun fact box: hidden until the button is clicked (JS sets display: block) */
+#fact-box {
+    display: none;
+}
+ 
+/* Added by JS the first time a fact is shown */
+.fact-box {
+    background-color: white;
+    border-left: 6px solid rgb(155, 27, 27);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-top: 16px;
+}
+ 
+/* Page change: light mode -- change of color palette into a newspaper type vibe */
+body.light-mode {
+    background-color: #e3d5b8;
+}
+ 
+body.light-mode main {
+    background-color: #f6efdc;
+}
+
+body.light-mode .card {
+    background-color: #fffaf0;
+}
+ 
+body.light-mode .site-footer {
+    color: #1a1a1a;                /* dark footer text so it's readable on the light page */
+    border-top-color: #1a1a1a;
+}
+
+body.light-mode header {
+    background-color: #1f2f4d;    /*change of color for the header because the red on dark mode was too harsh on the eyes */
+}
+ 
