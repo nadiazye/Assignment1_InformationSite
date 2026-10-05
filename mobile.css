@@ -1,0 +1,70 @@
+/* ---------- TABLETS OR SMALLER (screen 768px wide or less) ---------- */
+@media (max-width: 768px) {
+
+    html {
+        scroll-padding-top: 20px;          
+    }
+
+    body {
+        padding: 20px 10px;                
+    }
+    header {
+        position: static;                  
+    }
+
+    main {
+        padding: 10px 16px 20px 16px;      
+    }
+
+    /* --- Nav is now vertical instead of horizontal --- */
+    nav ul {
+        grid-auto-flow: row;               
+        grid-template-columns: 1fr;        
+    }
+
+    nav ul li {
+        border-right: none;                /* instead o fidivders on the side, they're in between each line */
+        border-bottom: 1px solid black;    
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;               /* no line after the final link, same as desktop */
+    }
+
+    /* --- Logo --- */
+    .top-image {
+        margin-left: 0;                    
+        width: 200px;
+    }
+
+    /* --- Cards --- */
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);   /* exactly 2 cards per row */
+    }
+
+    /* --- Footer --- */
+    .site-footer {
+        padding-top: 30px;                 
+    }
+}
+
+
+/* ---------- PHONES (screen 480px wide or less) ---------- */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.6rem;                 
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;        
+    }
+
+    .card p {
+        max-height: 220px;                 
+    }
+}
